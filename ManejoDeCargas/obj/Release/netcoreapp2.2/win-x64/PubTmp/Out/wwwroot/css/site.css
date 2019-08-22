@@ -1,0 +1,123 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+.card {
+    -webkit-box-shadow: 0px 0px 33px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 33px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 33px -8px rgba(0,0,0,0.75);
+}
+
+.card-header {
+    background: rgba(14,89,158,1);
+    background: -moz-linear-gradient(45deg, rgba(14,89,158,1) 0%, rgba(65,142,224,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(14,89,158,1)), color-stop(100%, rgba(65,142,224,1)));
+    background: -webkit-linear-gradient(45deg, rgba(14,89,158,1) 0%, rgba(65,142,224,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(14,89,158,1) 0%, rgba(65,142,224,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(14,89,158,1) 0%, rgba(65,142,224,1) 100%);
+    background: linear-gradient(45deg, rgba(14,89,158,1) 0%, rgba(65,142,224,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e599e', endColorstr='#418ee0', GradientType=1 );
+    color: #FFF;
+}
+
+#button-addon2:hover {
+    background-color: rgba(14,89,158,1);
+}
+
+.thead-blue {
+    background: rgba(14,89,158,1);
+    background: -moz-linear-gradient(45deg, rgba(14,89,158,1) 0%, rgba(65,142,224,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(14,89,158,1)), color-stop(100%, rgba(65,142,224,1)));
+    background: -webkit-linear-gradient(45deg, rgba(14,89,158,1) 0%, rgba(65,142,224,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(14,89,158,1) 0%, rgba(65,142,224,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(14,89,158,1) 0%, rgba(65,142,224,1) 100%);
+    background: linear-gradient(45deg, rgba(14,89,158,1) 0%, rgba(65,142,224,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e599e', endColorstr='#418ee0', GradientType=1 );
+    color: #FFF;
+}
+
+.table th, .table td {
+    vertical-align:middle !important;
+}
+
+.btn-cancel {
+    width: 125px;
+    height: auto;
+    display: block;
+    margin: 5% auto;
+}
+
+.letter{
+    position:relative;
+    margin-top:5%;
+}
+
+#round{
+    width:100px;
+    height:100px;
+    display:block;
+    margin:auto;
+    border:2px solid rgba(0,0,0,0.75);
+}
+
+#round p{
+    line-height:100px;
+    text-align:center;
+    font-size:1.5rem;
+}

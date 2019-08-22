@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "Error";
+}
+
+    <main>
+        <div class="container-fluid align-items-center">
+            <br />
+            <br />
+            <div class="row">
+                <div class="rounded-circle border-danger" id="round">
+                    <p class="text-danger">Oops!</p>
+                </div>
+            </div>
+            <div class="row letter">
+                <div class="col">
+                    <h1 class="text-center">@ViewBag.error</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-outline-danger btn-cancel" onclick="cancel();">Volver</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+

@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Manejo De Cargas";
+}
+
+<div class="container-fluid">
+    <br />
+    <div class="card align-middle">
+        <div class="card-header">
+            Apertura y Cierre de Pesadas
+        </div>
+        <div class="card-body">
+            <form class="form-inline" asp-action="SearchPesada" method="post" role="search">
+                @Html.AntiForgeryToken()
+                <div class="input-group col">
+                    <input type="search" class="form-control" name="pesadaId" placeholder="Número de pesada" aria-label="Número de pesada" aria-describedby="button-addon2" autocomplete="off">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="fas fa-search"></i>&nbsp;Buscar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

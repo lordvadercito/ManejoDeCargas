@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewData["Title"] = "Lista de pesadas";
+}
+@model Pesada
+    <div class="container-fluid">
+        <br />
+        <div class="card align-middle">
+            <div class="card-header">
+                Resultado de búsqueda
+                <button type="button" id="cancel" class="btn btn-outline-light float-right" onclick="cancel();"><i class="fas fa-times"></i>&nbsp;Cancelar</button>
+            </div>
+            <div class="card-body">
+                @Html.AntiForgeryToken()
+                <table class="table">
+                    <thead class="thead-blue">
+                        <tr>
+                            <th scope="col"># Pesada</th>
+                            <th scope="col">Patente</th>
+                            <th scope="col">Conductor</th>
+                            <th scope="col">Transporte</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@Model.PesadaId</td>
+                            <td>@Model.Patente</td>
+                            <td>@Model.Conductor</td>
+                            <td>@Model.Transporte</td>
+                            @{ if (Model.Estado.Equals("SA"))
+                                {
+                                    <td>Cerrada</td>
+                                }
+                                else
+                                {
+                                    <td>Abierta</td>
+                                }
+                            }
+                            @{ if (Model.Estado.Equals("SA"))
+                                {
+                                    <td><button type="button" class="btn btn-outline-success" id="estado" value="SA" onclick="changeState();"><i class="fas fa-lock-open"></i>&nbsp;Abrir</button></td>
+                                }
+                                else
+                                {
+                                    <td><button type="button" class="btn btn-outline-danger" id="estado" value="BE" onclick="changeState();"><i class="fas fa-lock"></i>&nbsp;Cerrar</button></td>
+                                }
+                            }
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row" id="status">
+                    <div class="col text-center" id="success" role="alert">
+                        <p style="color:#029e3b;">Datos actualizados con éxito</p>
+                    </div>
+                </div>
+                <input type="hidden" name="pesadaID" id="pesadaID" value="@Model.PesadaId" />
+            </div>
+        </div>
+    </div>
+
